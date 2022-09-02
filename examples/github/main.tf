@@ -3,7 +3,7 @@ module "github_oauth" {
   version = "0.1.0"
 
   hostname   = var.hostname
-  name       = var.name
+  name       = var.client_name
   token      = var.token
   org        = var.org
   github_pat = var.github_pat

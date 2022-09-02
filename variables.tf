@@ -3,7 +3,7 @@ variable "hostname" {
   default     = "app.terraform.io"
   description = "FQDN of the host in question. Defaults to 'app.terraform.io'"
 }
-variable "name" {
+variable "client_name" {
   type        = string
   default     = "GitHub (Your_Username)"
   description = "Name of the GitHub client connection saved in the Providers tab." # Recommend "GitHub (Your_Username)" for easy identification
