@@ -20,12 +20,12 @@
 
 ## Required Inputs
 
-| Name                                                            | Description                                                                                    | Type     | Default | Required |
-| --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | -------- | ------- | :------: |
-| <a name="input_github_pat"></a> [github_pat](#input_github_pat) | Your GitHub user Personal Access Token. Can be obtained via https://github.com/settings/tokens | `string` | n/a     |   yes    |
-| <a name="input_hostname"></a> [hostname](#input_hostname)       | FQDN of the host in question. eg. 'app.terraform.io'                                           | `string` | n/a     |   yes    |
-| <a name="input_org"></a> [org](#input_org)                      | The name of the TFE/C Org you are wanting to attach this GitHub OAuth connection to.           | `string` | n/a     |   yes    |
-| <a name="input_token"></a> [token](#input_token)                | User token with Owners team permissions                                                        | `string` | n/a     |   yes    |
+| Name                                                            | Description                                                                                    | Type     | Required |
+| --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | -------- | -------- |
+| <a name="input_hostname"></a> [hostname](#input_hostname)       | FQDN of the host in question. eg. 'app.terraform.io'                                           | `string` | yes      |
+| <a name="input_token"></a> [token](#input_token)                | User token with Owners team permissions                                                        | `string` | yes      |
+| <a name="input_org"></a> [org](#input_org)                      | The name of the TFE/C Org you are wanting to attach this GitHub OAuth connection to.           | `string` | yes      |
+| <a name="input_github_pat"></a> [github_pat](#input_github_pat) | Your GitHub user Personal Access Token. Can be obtained via https://github.com/settings/tokens | `string` | yes      |
 
 ## Usage
 
@@ -34,10 +34,10 @@ module "github_oauth" {
   source  = "app.terraform.io/kryptionx/github-oauth/tfe"
   version = "0.1.0"
 
-  github_pat = var.github_pat
   hostname   = var.hostname
-  org        = var.org
   token      = var.token
+  org        = var.org
+  github_pat = var.github_pat
 }
 ```
 

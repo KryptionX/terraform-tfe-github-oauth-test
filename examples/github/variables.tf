@@ -1,4 +1,4 @@
 variable "hostname" {}
 variable "token" {}
-variable "github_pat" {}
 variable "org" {}
+variable "github_pat" {}
