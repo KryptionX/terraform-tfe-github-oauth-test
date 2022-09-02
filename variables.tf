@@ -1,10 +1,10 @@
 variable "hostname" {
-  type = string
+  type        = string
   description = "FQDN of the host in question. Example 'app.terraform.io' or 'shame-wizard.tf-support.hashicorpdemo.com."
 }
 variable "client_name" {
-  type = string
-  description = "Name of the GitHub client connection saved in the Providers tab. Using "GitHub (Your_Username)" makes for easy identification in shared org environments."
+  type        = string
+  description = "Name of the GitHub client connection saved in the Providers tab. Using 'GitHub (Your_Username)' makes for easy identification in shared org environments."
 }
 
 variable "token" {
