@@ -34,10 +34,10 @@ module "github_oauth" {
   source  = "app.terraform.io/kryptionx/github-oauth/tfe"
   version = "0.1.0"
 
-  github_pat = "ghp_XXXXXwzh2kLEZd1u4EhVDJMPCD3zDA3XXXXX"
-  hostname = "shame-wizard.tf-support.hashicorpdemo.com"
-  org = "hashi"
-  token = "AAAAAAAAAA.atlasv1.XXXXXXXXXX"
+  github_pat = var.github_pat
+  hostname   = var.hostname
+  org        = var.org
+  token      = var.token
 }
 ```
 
