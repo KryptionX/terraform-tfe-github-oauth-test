@@ -20,6 +20,6 @@ variable "org" {
 
 variable "github_pat" {
   type        = string
-  description = "Your GitHub user Personal Access Token. Can be obtained using https://github.com/settings/tokens"
+  description = "Your GitHub user Personal Access Token. Please ensure your PAT is properly configured with SSO for any necessary HashiCorp orgs. Can be obtained using https://github.com/settings/tokens"
   sensitive   = true
 }
