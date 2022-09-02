@@ -1,5 +1,9 @@
 <!-- BEGIN_TF_DOCS -->
 
+## Purpose of module
+
+In a support role, we regularly stand up TFC/E environments and connect our VCS provider to it for quick reproduction testing. While connecting GitHub isn't difficult, it can be a time consuming manual process. This module makes this process easy and repeatable with the perk of being in a cloud hosted workspace.
+
 ## Requirements
 
 | Name                                                   | Version   |
