@@ -1,6 +1,7 @@
 variable "hostname" {
   type        = string
-  description = "FQDN of the host in question. eg. 'app.terraform.io'"
+  default     = "app.terraform.io"
+  description = "FQDN of the host in question. Defaults to 'app.terraform.io'"
 }
 
 variable "token" {
