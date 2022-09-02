@@ -12,6 +12,7 @@ variable "client_name" {
 variable "token" {
   type        = string
   description = "User token with Owners team permissions"
+  sensitive   = true
 }
 
 variable "org" {
@@ -22,4 +23,5 @@ variable "org" {
 variable "github_pat" {
   type        = string
   description = "Your GitHub user Personal Access Token. Can be obtained via https://github.com/settings/tokens"
+  sensitive   = true
 }
