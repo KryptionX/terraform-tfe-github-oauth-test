@@ -42,7 +42,7 @@ Contents of `main.tf`
 
 ```
 module "github_oauth" {
-  source  = "app.terraform.io/kryptionx/github-oauth/tfe"
+  source  = "app.terraform.io/hashicorp-support-eng/github-oauth/tfe"
   version = "0.1.0"
 
   hostname     = var.hostname
