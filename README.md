@@ -8,13 +8,13 @@ In a support role, we regularly stand up TFC/E environments and connect our VCS 
 
 | Name                                                   | Version   |
 | ------------------------------------------------------ | --------- |
-| <a name="requirement_tfe"></a> [tfe](#requirement_tfe) | ~> 0.32.0 |
+| <a name="requirement_tfe"></a> [tfe](#requirement_tfe) | ~> 0.64.0 |
 
 ## Providers
 
 | Name                                             | Version   |
 | ------------------------------------------------ | --------- |
-| <a name="provider_tfe"></a> [tfe](#provider_tfe) | ~> 0.32.0 |
+| <a name="provider_tfe"></a> [tfe](#provider_tfe) | ~> 0.64.0 |
 
 ## Resources
 
